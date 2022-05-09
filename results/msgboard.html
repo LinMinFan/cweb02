@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 944px;
+            height: 496px;
+            margin: 0 auto;
+        }
+
+        .content {
+            width: 706px;
+            height: 306px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            border: 1px solid #DDDDDD;
+            justify-content: center;
+        }
+
+        .content>* {
+            border: 1px solid #DDDDDD;
+        }
+
+        .marquee {
+            text-align: center;
+        }
+
+        .title {
+            color: #FF0000;
+            font-weight: bolder;
+        }
+
+        .left {
+            width: 120px;
+            text-align: center;
+        }
+
+        .right {
+            width: 580px;
+            overflow: hidden;
+        }
+        input{
+            margin: 2px;
+        }
+        select{
+            margin: 2px;
+        }
+        textarea {
+            width: 578px;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="marquee">
+        <marquee behavior="" direction="">
+            謝謝蒞臨本網站，請給予我們支持、鼓勵與建言。
+        </marquee>
+    </div>
+    <br>
+    <div class="main">
+        <div class="title">
+            現在位置：首頁＞訪客留言
+        </div>
+        <br>
+        <form action="">
+            <div class="content">
+                <div class="left">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</div>
+                <div class="right">
+                    <input size="20" type="text">
+                </div>
+                <div class="left">電子郵件</div>
+                <div class="right">
+                    <form action="">
+                        <input size="60" type="text">
+                </div>
+                <div class="left">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;別</div>
+                <div class="right">
+                    <input type="radio" id="男" name="gender" value="男" checked>
+                    <label for="男">男</label>
+                    <input type="radio" id="女" name="gender" value="">
+                    <label for="女">女</label>
+                </div>
+                <div class="left">職業類別</div>
+                <div class="right">
+                    <select name="job" id="job">
+                        <option value="">-----------請選擇職業類別-----------</option>
+                        <option value="">1.現役軍人</option>
+                        <option value="">2.專業人員</option>
+                        <option value="">3.技術員及助理專業人員</option>
+                    </select>
+                </div>
+                <div class="left">留言內容</div>
+                <div class="right">
+                    <textarea name="" id="" cols="78" rows="10"></textarea>
+                </div>
+                <div class="left">
+                    <input  type="button" value="送出" onclick="alert('歡迎蒞臨本網站，您的寶貴意見我們會儘速處理與回覆，謝謝！')">
+                    <input  type="reset" value="重設">
+                </div>
+                <div class="right"></div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

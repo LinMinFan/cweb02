@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .main{
+            width: 944px;
+            height: 496px;
+            margin: 0 auto;
+        }
+        .menu{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .menu>a{
+            background-color: lightgray;
+            text-decoration: none;
+            border: 1px solid #000000;
+            display: block;
+            margin-right: 1px;
+            color: #000000;
+        }
+        .menu>a:hover{
+            background-color: #EEEEEE;
+        }
+        .content{
+            width: 100%;
+            height: 486px;
+            border: 1px solid #000000;
+            background-color: lightgray;
+        }
+        iframe{
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+        .title{
+            color: #FF0000;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            現在位置：首頁＞健康天地
+        </div>
+        <br>
+        <div class="menu">
+            <a href="./health/h1.html" target="health">健康新知</a>
+            <a href="./health/h2.html" target="health">菸害防制</a>
+            <a href="./health/h3.html" target="health">癌症防治</a>
+            <a href="./health/h4.html" target="health">慢性病防治</a>
+        </div>
+        <div class="content">
+            <iframe src="./health/h1.html" frameborder="0" name="health"></iframe>
+        </div>
+    </div>
+</body>
+</html>
